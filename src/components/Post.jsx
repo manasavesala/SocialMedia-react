@@ -23,7 +23,6 @@ function Post(props) {
       </style>
       <h3>{props.name}</h3>
       <p><em>{props.content}</em>
-        <p>{props.id}</p>
         <button onClick={() => props.changeLikes(props.id)}
         >👍</button>
         <span>Likes: {props.likes}</span>
@@ -37,7 +36,7 @@ function Post(props) {
 
 Post.propTypes = {
   name: PropTypes.string.isRequired,
-  id: PropTypes.number,
+  id: PropTypes.string,
   content: PropTypes.string,
   likes: PropTypes.number,
   changeLikes: PropTypes.func,

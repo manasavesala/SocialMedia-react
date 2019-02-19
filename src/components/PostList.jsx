@@ -21,7 +21,7 @@ function PostList(props) {
           dislikes={post.dislikes}
           changeLikes={props.changeLikes}
           changeDisLikes={props.changeDisLikes}
-          key={post.id} />
+        />
       )}
     </div>
   );
